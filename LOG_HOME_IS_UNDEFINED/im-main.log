@@ -1,0 +1,508 @@
+2018-11-12 17:34:27.791 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] 第 1 次重连, 最大重连次数 -> 5
+2018-11-12 17:36:42.097 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] 第 1 次重连, 最大重连次数 -> 5
+2018-11-12 17:36:59.900 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] 第 1 次重连, 最大重连次数 -> 5
+2018-11-12 17:37:02.924 [nioEventLoopGroup-2-3] [io.console.im.client.Application]-[INFO] 第 2 次重连, 最大重连次数 -> 5
+2018-11-12 17:37:07.933 [nioEventLoopGroup-2-5] [io.console.im.client.Application]-[INFO] 第 3 次重连, 最大重连次数 -> 5
+2018-11-12 17:37:16.943 [nioEventLoopGroup-2-7] [io.console.im.client.Application]-[INFO] 第 4 次重连, 最大重连次数 -> 5
+2018-11-12 17:37:33.951 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] 第 5 次重连, 最大重连次数 -> 5
+2018-11-12 17:38:06.957 [nioEventLoopGroup-2-3] [io.console.im.client.Application]-[WARN] 重连次数已经到达上限,退出系统 ...
+2018-11-12 17:43:50.817 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] 第 1 次重连, 最大重连次数 -> 5
+2018-11-12 17:43:50.833 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] connect is down .
+2018-11-12 17:49:08.259 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] 第 1 次重连, 最大重连次数 -> 5
+2018-11-12 17:52:24.044 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] 第 1 次重连, 最大重连次数 -> 5
+2018-11-12 17:52:27.056 [nioEventLoopGroup-2-3] [io.console.im.client.Application]-[INFO] 第 2 次重连, 最大重连次数 -> 5
+2018-11-12 17:52:32.070 [nioEventLoopGroup-2-5] [io.console.im.client.Application]-[INFO] 第 3 次重连, 最大重连次数 -> 5
+2018-11-12 17:52:41.095 [nioEventLoopGroup-2-7] [io.console.im.client.Application]-[INFO] 第 4 次重连, 最大重连次数 -> 5
+2018-11-12 17:52:45.372 [nioEventLoopGroup-2-1] [io.console.im.server.Application]-[INFO] port bind success -> 6666
+2018-11-12 17:52:57.098 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] connect success -> 127.0.0.1:6666
+2018-11-12 17:52:57.099 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelActive ... 
+2018-11-12 17:52:57.144 [nioEventLoopGroup-3-1] [io.console.im.server.handler.CharServerHandler]-[INFO] channelActive ...
+2018-11-12 17:52:57.221 [nioEventLoopGroup-3-1] [io.console.im.server.handler.CharServerHandler]-[INFO] channelRead ..
+2018-11-12 17:52:57.222 [nioEventLoopGroup-3-1] [io.console.im.server.handler.CharServerHandler]-[INFO] received -> hello console char !
+2018-11-12 17:52:57.237 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelRead0 ... 
+2018-11-12 17:52:57.255 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] received -> welcome console char!
+2018-11-12 17:56:13.833 [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline]-[WARN] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1128)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 17:56:25.577 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] 第 1 次重连, 最大重连次数 -> 5
+2018-11-12 17:56:27.592 [nioEventLoopGroup-2-3] [io.console.im.client.Application]-[INFO] 第 2 次重连, 最大重连次数 -> 5
+2018-11-12 17:56:27.593 [nioEventLoopGroup-2-2] [io.console.im.client.Application]-[INFO] ssssssssss
+2018-11-12 17:56:27.597 [nioEventLoopGroup-2-3] [io.netty.util.concurrent.DefaultPromise]-[WARN] An exception was thrown by io.console.im.client.Application$$Lambda$2/1205555397.operationComplete()
+java.util.concurrent.CancellationException: null
+	at io.netty.util.concurrent.DefaultPromise.cancel(...)(Unknown Source)
+2018-11-12 17:57:09.390 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] 第 1 次重连, 最大重连次数 -> 5
+2018-11-12 17:57:11.410 [nioEventLoopGroup-2-2] [io.console.im.client.Application]-[INFO] ssssssssss
+2018-11-12 17:57:11.410 [nioEventLoopGroup-2-3] [io.console.im.client.Application]-[INFO] 第 2 次重连, 最大重连次数 -> 5
+2018-11-12 17:57:11.417 [nioEventLoopGroup-2-3] [io.netty.util.concurrent.DefaultPromise]-[WARN] An exception was thrown by io.console.im.client.Application$$Lambda$2/1205555397.operationComplete()
+java.util.concurrent.CancellationException: null
+	at io.netty.util.concurrent.DefaultPromise.cancel(...)(Unknown Source)
+2018-11-12 17:57:55.422 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] 第 1 次重连, 最大重连次数 -> 5
+2018-11-12 17:57:57.436 [nioEventLoopGroup-2-2] [io.console.im.client.Application]-[INFO] ssssssssss
+2018-11-12 17:58:00.844 [nioEventLoopGroup-2-3] [io.console.im.client.Application]-[INFO] 第 2 次重连, 最大重连次数 -> 5
+2018-11-12 17:58:06.301 [nioEventLoopGroup-2-4] [io.console.im.client.Application]-[INFO] ssssssssss
+2018-11-12 17:58:16.051 [nioEventLoopGroup-2-5] [io.console.im.client.Application]-[INFO] 第 3 次重连, 最大重连次数 -> 5
+2018-11-12 17:58:26.322 [nioEventLoopGroup-2-6] [io.console.im.client.Application]-[INFO] ssssssssss
+2018-11-12 17:58:38.969 [nioEventLoopGroup-2-7] [io.console.im.client.Application]-[INFO] 第 4 次重连, 最大重连次数 -> 5
+2018-11-12 17:58:38.979 [nioEventLoopGroup-2-7] [io.netty.util.concurrent.DefaultPromise]-[WARN] An exception was thrown by io.console.im.client.Application$$Lambda$2/70323523.operationComplete()
+java.util.concurrent.CancellationException: null
+	at io.netty.util.concurrent.DefaultPromise.cancel(...)(Unknown Source)
+2018-11-12 18:00:16.381 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] 第 1 次重连, 最大重连次数 -> 5
+2018-11-12 18:00:19.008 [nioEventLoopGroup-2-1] [io.console.im.server.Application]-[INFO] port bind success -> 6666
+2018-11-12 18:00:19.408 [nioEventLoopGroup-2-3] [io.console.im.client.Application]-[INFO] connect success -> 127.0.0.1:6666
+2018-11-12 18:00:19.409 [nioEventLoopGroup-2-3] [io.console.im.client.handler.CharClientHandler]-[INFO] channelActive ... 
+2018-11-12 18:00:19.463 [nioEventLoopGroup-3-1] [io.console.im.server.handler.CharServerHandler]-[INFO] channelActive ...
+2018-11-12 18:00:19.508 [nioEventLoopGroup-3-1] [io.console.im.server.handler.CharServerHandler]-[INFO] channelRead ..
+2018-11-12 18:00:19.509 [nioEventLoopGroup-3-1] [io.console.im.server.handler.CharServerHandler]-[INFO] received -> hello console char !
+2018-11-12 18:00:19.520 [nioEventLoopGroup-2-3] [io.console.im.client.handler.CharClientHandler]-[INFO] channelRead0 ... 
+2018-11-12 18:00:19.521 [nioEventLoopGroup-2-3] [io.console.im.client.handler.CharClientHandler]-[INFO] received -> welcome console char!
+2018-11-12 18:01:33.648 [nioEventLoopGroup-2-3] [io.netty.channel.DefaultChannelPipeline]-[WARN] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1128)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 18:14:10.825 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] 第 1 次重连, 最大重连次数 -> 5
+2018-11-12 18:24:57.500 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] 第 1 次重连, 最大重连次数 -> 5
+2018-11-12 18:25:00.292 [nioEventLoopGroup-2-1] [io.console.im.server.Application]-[INFO] port bind success -> 6666
+2018-11-12 18:25:00.522 [nioEventLoopGroup-2-3] [io.console.im.client.Application]-[INFO] connect success -> 127.0.0.1:6666
+2018-11-12 18:25:00.523 [nioEventLoopGroup-2-3] [io.console.im.client.handler.CharClientHandler]-[INFO] channelActive ... 
+2018-11-12 18:25:00.536 [nioEventLoopGroup-3-1] [io.console.im.server.handler.CharServerHandler]-[INFO] channelActive ...
+2018-11-12 18:25:00.586 [nioEventLoopGroup-3-1] [io.console.im.server.handler.CharServerHandler]-[INFO] channelRead ..
+2018-11-12 18:25:00.587 [nioEventLoopGroup-3-1] [io.console.im.server.handler.CharServerHandler]-[INFO] received -> hello console char !
+2018-11-12 18:25:00.604 [nioEventLoopGroup-2-3] [io.console.im.client.handler.CharClientHandler]-[INFO] channelRead0 ... 
+2018-11-12 18:25:00.605 [nioEventLoopGroup-2-3] [io.console.im.client.handler.CharClientHandler]-[INFO] received -> welcome console char!
+2018-11-12 18:28:31.532 [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline]-[WARN] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1128)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 18:28:37.616 [nioEventLoopGroup-3-2] [io.console.im.server.handler.CharServerHandler]-[INFO] channelActive ...
+2018-11-12 18:28:37.625 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] connect success -> 127.0.0.1:6666
+2018-11-12 18:28:37.632 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelActive ... 
+2018-11-12 18:28:37.706 [nioEventLoopGroup-3-2] [io.console.im.server.handler.CharServerHandler]-[INFO] channelRead ..
+2018-11-12 18:28:37.707 [nioEventLoopGroup-3-2] [io.console.im.server.handler.CharServerHandler]-[INFO] received -> hello console char !
+2018-11-12 18:28:37.713 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelRead0 ... 
+2018-11-12 18:28:37.714 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] received -> welcome console char!
+2018-11-12 18:28:54.660 [nioEventLoopGroup-3-2] [io.netty.channel.DefaultChannelPipeline]-[WARN] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1128)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 18:29:03.525 [nioEventLoopGroup-3-3] [io.console.im.server.handler.CharServerHandler]-[INFO] channelActive ...
+2018-11-12 18:29:03.531 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] connect success -> 127.0.0.1:6666
+2018-11-12 18:29:03.545 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelActive ... 
+2018-11-12 18:29:03.620 [nioEventLoopGroup-3-3] [io.console.im.server.handler.CharServerHandler]-[INFO] channelRead ..
+2018-11-12 18:29:03.621 [nioEventLoopGroup-3-3] [io.console.im.server.handler.CharServerHandler]-[INFO] received -> hello console char !
+2018-11-12 18:29:03.632 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelRead0 ... 
+2018-11-12 18:29:03.634 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] received -> welcome console char!
+2018-11-12 18:29:08.344 [pool-1-thread-1] [io.console.im.client.Application]-[INFO] 1
+2018-11-12 18:29:10.759 [pool-1-thread-1] [io.console.im.client.Application]-[INFO] 2
+2018-11-12 18:29:11.891 [pool-1-thread-1] [io.console.im.client.Application]-[INFO] 3
+2018-11-12 18:29:13.137 [pool-1-thread-1] [io.console.im.client.Application]-[INFO] 4
+2018-11-12 18:29:15.087 [pool-1-thread-1] [io.console.im.client.Application]-[INFO] 5
+2018-11-12 18:29:21.288 [pool-1-thread-1] [io.console.im.client.Application]-[INFO] ll
+2018-11-12 18:29:36.925 [nioEventLoopGroup-3-3] [io.netty.channel.DefaultChannelPipeline]-[WARN] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1128)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 18:38:47.838 [nioEventLoopGroup-3-4] [io.console.im.server.handler.CharServerHandler]-[INFO] channelActive ...
+2018-11-12 18:38:47.844 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] connect success -> 127.0.0.1:6666
+2018-11-12 18:38:47.862 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelActive ... 
+2018-11-12 18:38:47.881 [pool-1-thread-1] [io.console.im.client.Application]-[ERROR] 
+java.lang.IllegalArgumentException: '127.0.0.1' is already in use
+	at io.netty.util.ConstantPool.createOrThrow(ConstantPool.java:113)
+	at io.netty.util.ConstantPool.newInstance(ConstantPool.java:95)
+	at io.netty.util.AttributeKey.newInstance(AttributeKey.java:55)
+	at io.console.im.client.Application.lambda$consoleOperation$2(Application.java:76)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 18:38:47.910 [nioEventLoopGroup-3-4] [io.console.im.server.handler.CharServerHandler]-[INFO] channelRead ..
+2018-11-12 18:38:47.910 [nioEventLoopGroup-3-4] [io.console.im.server.handler.CharServerHandler]-[INFO] received -> hello console char !
+2018-11-12 18:38:47.915 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelRead0 ... 
+2018-11-12 18:38:47.916 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] received -> welcome console char!
+2018-11-12 18:43:56.307 [nioEventLoopGroup-3-4] [io.netty.channel.DefaultChannelPipeline]-[WARN] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1128)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 18:44:05.832 [nioEventLoopGroup-3-5] [io.console.im.server.handler.CharServerHandler]-[INFO] channelActive ...
+2018-11-12 18:44:05.846 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] connect success -> 127.0.0.1:6666
+2018-11-12 18:44:05.892 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelActive ... 
+2018-11-12 18:44:06.020 [nioEventLoopGroup-3-5] [io.console.im.server.handler.CharServerHandler]-[INFO] channelRead ..
+2018-11-12 18:44:06.021 [nioEventLoopGroup-3-5] [io.console.im.server.handler.CharServerHandler]-[INFO] received -> hello console char !
+2018-11-12 18:44:06.027 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelRead0 ... 
+2018-11-12 18:44:06.028 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] received -> welcome console char!
+2018-11-12 18:44:11.956 [pool-1-thread-1] [io.console.im.client.Application]-[INFO] 1
+2018-11-12 18:44:15.821 [pool-1-thread-1] [io.console.im.client.Application]-[INFO] 2
+2018-11-12 18:44:18.521 [pool-1-thread-1] [io.console.im.client.Application]-[INFO] 3
+2018-11-12 18:44:40.347 [nioEventLoopGroup-3-5] [io.netty.channel.DefaultChannelPipeline]-[WARN] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1128)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 18:44:47.844 [nioEventLoopGroup-3-6] [io.console.im.server.handler.CharServerHandler]-[INFO] channelActive ...
+2018-11-12 18:44:47.855 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] connect success -> 127.0.0.1:6666
+2018-11-12 18:44:47.877 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelActive ... 
+2018-11-12 18:44:47.954 [nioEventLoopGroup-3-6] [io.console.im.server.handler.CharServerHandler]-[INFO] channelRead ..
+2018-11-12 18:44:47.955 [nioEventLoopGroup-3-6] [io.console.im.server.handler.CharServerHandler]-[INFO] received -> hello console char !
+2018-11-12 18:44:47.960 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelRead0 ... 
+2018-11-12 18:44:47.961 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] received -> welcome console char!
+2018-11-12 18:45:02.183 [pool-1-thread-1] [io.console.im.client.Application]-[INFO] ll
+2018-11-12 18:45:06.798 [pool-1-thread-1] [io.console.im.client.Application]-[INFO] help
+2018-11-12 18:45:23.053 [pool-1-thread-1] [io.console.im.client.Application]-[INFO] ss
+2018-11-12 18:45:30.393 [pool-1-thread-1] [io.console.im.client.Application]-[INFO] a
+2018-11-12 18:45:37.783 [pool-1-thread-1] [io.console.im.client.Application]-[INFO] d
+2018-11-12 18:46:41.285 [nioEventLoopGroup-3-6] [io.netty.channel.DefaultChannelPipeline]-[WARN] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1128)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 20:36:33.326 [nioEventLoopGroup-3-7] [io.console.im.server.handler.CharServerHandler]-[INFO] channelActive ...
+2018-11-12 20:36:33.330 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] connect success -> 127.0.0.1:6666
+2018-11-12 20:36:33.353 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelActive ... 
+2018-11-12 20:36:33.409 [nioEventLoopGroup-3-7] [io.console.im.server.handler.CharServerHandler]-[INFO] channelRead ..
+2018-11-12 20:36:33.409 [nioEventLoopGroup-3-7] [io.console.im.server.handler.CharServerHandler]-[INFO] received -> hello console char !
+2018-11-12 20:36:33.414 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelRead0 ... 
+2018-11-12 20:36:33.416 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] received -> welcome console char!
+2018-11-12 20:37:18.378 [nioEventLoopGroup-3-7] [io.netty.channel.DefaultChannelPipeline]-[WARN] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1128)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 20:37:24.487 [nioEventLoopGroup-3-8] [io.console.im.server.handler.CharServerHandler]-[INFO] channelActive ...
+2018-11-12 20:37:24.494 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] connect success -> 127.0.0.1:6666
+2018-11-12 20:37:29.217 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelActive ... 
+2018-11-12 20:37:29.257 [nioEventLoopGroup-3-8] [io.console.im.server.handler.CharServerHandler]-[INFO] channelRead ..
+2018-11-12 20:37:29.266 [nioEventLoopGroup-3-8] [io.console.im.server.handler.CharServerHandler]-[INFO] received -> hello console char !
+2018-11-12 20:37:29.271 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelRead0 ... 
+2018-11-12 20:37:29.272 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] received -> welcome console char!
+2018-11-12 20:37:43.048 [nioEventLoopGroup-2-1] [io.netty.channel.DefaultChannelPipeline]-[WARN] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1128)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 20:38:04.319 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] 第 1 次重连, 最大重连次数 -> 5
+2018-11-12 20:38:07.345 [nioEventLoopGroup-2-3] [io.console.im.client.Application]-[INFO] 第 2 次重连, 最大重连次数 -> 5
+2018-11-12 20:38:12.341 [nioEventLoopGroup-2-5] [io.console.im.client.Application]-[INFO] 第 3 次重连, 最大重连次数 -> 5
+2018-11-12 20:40:11.234 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] 第 1 次重连, 最大重连次数 -> 5
+2018-11-12 20:40:14.258 [nioEventLoopGroup-2-3] [io.console.im.client.Application]-[INFO] 第 2 次重连, 最大重连次数 -> 5
+2018-11-12 20:40:19.265 [nioEventLoopGroup-2-5] [io.console.im.client.Application]-[INFO] 第 3 次重连, 最大重连次数 -> 5
+2018-11-12 20:40:23.375 [nioEventLoopGroup-2-1] [io.console.im.server.Application]-[INFO] port bind success -> 6666
+2018-11-12 20:40:27.270 [nioEventLoopGroup-2-7] [io.console.im.client.Application]-[INFO] connect success -> 127.0.0.1:6666
+2018-11-12 20:40:27.278 [nioEventLoopGroup-2-7] [io.console.im.client.handler.CharClientHandler]-[INFO] channelActive ... 
+2018-11-12 20:40:27.282 [nioEventLoopGroup-3-1] [io.console.im.server.handler.CharServerHandler]-[INFO] channelActive ...
+2018-11-12 20:40:27.374 [nioEventLoopGroup-3-1] [io.console.im.server.handler.CharServerHandler]-[INFO] channelRead ..
+2018-11-12 20:40:27.375 [nioEventLoopGroup-3-1] [io.console.im.server.handler.CharServerHandler]-[INFO] received -> hello console char !
+2018-11-12 20:40:27.388 [nioEventLoopGroup-2-7] [io.console.im.client.handler.CharClientHandler]-[INFO] channelRead0 ... 
+2018-11-12 20:40:27.388 [nioEventLoopGroup-2-7] [io.console.im.client.handler.CharClientHandler]-[INFO] received -> welcome console char!
+2018-11-12 20:41:01.010 [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline]-[WARN] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1128)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 20:41:12.608 [nioEventLoopGroup-3-2] [io.console.im.server.handler.CharServerHandler]-[INFO] channelActive ...
+2018-11-12 20:41:12.617 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelActive ... 
+2018-11-12 20:41:12.672 [nioEventLoopGroup-3-2] [io.console.im.server.handler.CharServerHandler]-[INFO] channelRead ..
+2018-11-12 20:41:12.672 [nioEventLoopGroup-3-2] [io.console.im.server.handler.CharServerHandler]-[INFO] received -> hello console char !
+2018-11-12 20:41:12.674 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] connect success -> 127.0.0.1:6666
+2018-11-12 20:41:12.707 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelRead0 ... 
+2018-11-12 20:41:12.708 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] received -> welcome console char!
+2018-11-12 20:41:35.274 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelActive ... 
+2018-11-12 20:41:35.320 [nioEventLoopGroup-3-3] [io.console.im.server.handler.CharServerHandler]-[INFO] channelActive ...
+2018-11-12 20:41:35.348 [nioEventLoopGroup-3-3] [io.console.im.server.handler.CharServerHandler]-[INFO] channelRead ..
+2018-11-12 20:41:35.349 [nioEventLoopGroup-3-3] [io.console.im.server.handler.CharServerHandler]-[INFO] received -> hello console char !
+2018-11-12 20:41:35.360 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelRead0 ... 
+2018-11-12 20:41:35.362 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] received -> welcome console char!
+2018-11-12 20:41:35.394 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] connect success -> 127.0.0.1:6666
+2018-11-12 20:42:07.630 [nioEventLoopGroup-3-2] [io.netty.channel.DefaultChannelPipeline]-[WARN] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1128)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 20:42:07.668 [nioEventLoopGroup-3-3] [io.netty.channel.DefaultChannelPipeline]-[WARN] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1128)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 20:42:18.787 [nioEventLoopGroup-2-1] [io.console.im.server.Application]-[INFO] port bind success -> 6666
+2018-11-12 20:42:33.863 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] connect success -> 127.0.0.1:6666
+2018-11-12 20:42:33.887 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelActive ... 
+2018-11-12 20:42:33.892 [nioEventLoopGroup-3-1] [io.console.im.server.handler.CharServerHandler]-[INFO] channelActive ...
+2018-11-12 20:42:33.985 [nioEventLoopGroup-3-1] [io.console.im.server.handler.CharServerHandler]-[INFO] channelRead ..
+2018-11-12 20:42:33.986 [nioEventLoopGroup-3-1] [io.console.im.server.handler.CharServerHandler]-[INFO] received -> hello console char !
+2018-11-12 20:42:34.013 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelRead0 ... 
+2018-11-12 20:42:34.014 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] received -> welcome console char!
+2018-11-12 20:42:40.103 [pool-1-thread-1] [io.console.im.client.Application]-[INFO] sad
+2018-11-12 20:42:45.733 [pool-1-thread-1] [io.console.im.client.Application]-[INFO] a
+2018-11-12 20:42:52.389 [pool-1-thread-1] [io.console.im.client.Application]-[INFO] b
+2018-11-12 20:42:54.097 [pool-1-thread-1] [io.console.im.client.Application]-[INFO] c
+2018-11-12 20:42:55.474 [pool-1-thread-1] [io.console.im.client.Application]-[INFO] d
+2018-11-12 20:42:59.731 [pool-1-thread-1] [io.console.im.client.Application]-[INFO] efgs
+2018-11-12 20:43:02.124 [pool-1-thread-1] [io.console.im.client.Application]-[INFO] asdad
+2018-11-12 20:43:15.152 [nioEventLoopGroup-3-1] [io.netty.channel.DefaultChannelPipeline]-[WARN] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1128)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 20:43:21.738 [nioEventLoopGroup-3-2] [io.console.im.server.handler.CharServerHandler]-[INFO] channelActive ...
+2018-11-12 20:43:21.745 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] connect success -> 127.0.0.1:6666
+2018-11-12 20:43:21.765 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelActive ... 
+2018-11-12 20:43:21.815 [nioEventLoopGroup-3-2] [io.console.im.server.handler.CharServerHandler]-[INFO] channelRead ..
+2018-11-12 20:43:21.816 [nioEventLoopGroup-3-2] [io.console.im.server.handler.CharServerHandler]-[INFO] received -> hello console char !
+2018-11-12 20:43:21.821 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelRead0 ... 
+2018-11-12 20:43:21.822 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] received -> welcome console char!
+2018-11-12 20:43:32.294 [nioEventLoopGroup-3-2] [io.netty.channel.DefaultChannelPipeline]-[WARN] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1128)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 20:43:41.071 [nioEventLoopGroup-3-3] [io.console.im.server.handler.CharServerHandler]-[INFO] channelActive ...
+2018-11-12 20:43:41.077 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] connect success -> 127.0.0.1:6666
+2018-11-12 20:43:41.093 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelActive ... 
+2018-11-12 20:43:41.135 [nioEventLoopGroup-3-3] [io.console.im.server.handler.CharServerHandler]-[INFO] channelRead ..
+2018-11-12 20:43:41.135 [nioEventLoopGroup-3-3] [io.console.im.server.handler.CharServerHandler]-[INFO] received -> hello console char !
+2018-11-12 20:43:41.140 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelRead0 ... 
+2018-11-12 20:43:41.141 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] received -> welcome console char!
+2018-11-12 20:43:57.526 [nioEventLoopGroup-3-3] [io.netty.channel.DefaultChannelPipeline]-[WARN] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1128)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2018-11-12 20:44:04.782 [nioEventLoopGroup-3-4] [io.console.im.server.handler.CharServerHandler]-[INFO] channelActive ...
+2018-11-12 20:44:04.789 [nioEventLoopGroup-2-1] [io.console.im.client.Application]-[INFO] connect success -> 127.0.0.1:6666
+2018-11-12 20:44:04.810 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelActive ... 
+2018-11-12 20:44:04.856 [nioEventLoopGroup-3-4] [io.console.im.server.handler.CharServerHandler]-[INFO] channelRead ..
+2018-11-12 20:44:04.857 [nioEventLoopGroup-3-4] [io.console.im.server.handler.CharServerHandler]-[INFO] received -> hello console char !
+2018-11-12 20:44:04.861 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] channelRead0 ... 
+2018-11-12 20:44:04.862 [nioEventLoopGroup-2-1] [io.console.im.client.handler.CharClientHandler]-[INFO] received -> welcome console char!
+2018-11-12 20:44:21.788 [nioEventLoopGroup-3-4] [io.netty.channel.DefaultChannelPipeline]-[WARN] An exceptionCaught() event was fired, and it reached at the tail of the pipeline. It usually means the last handler in the pipeline did not handle the exception.
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at io.netty.buffer.PooledUnsafeDirectByteBuf.setBytes(PooledUnsafeDirectByteBuf.java:288)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1128)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:347)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:148)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
